@@ -1,0 +1,72 @@
+<div class="row">
+	<div id="breadcrumb" class="col-md-12">
+		<ol class="breadcrumb">
+			<li><a href="index.html">Acceuil</a></li>
+			<li><a href="#">Nos Services</a></li>
+			
+		</ol>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="box">
+			<div class="box-header ">
+				<div class="box-name col-md-8">
+					<i class="fa fa-picture-o " ></i>
+					<span>Nos Services</span>
+				</div>
+				
+				<div class="no-move"></div>
+			</div>
+			
+			</div>
+		
+
+			<div id="simple_gallery" class="box-content col-md-8">
+				
+				
+				<div   rel="gallery1" href="#" title="Lambs Valley (JMImagesonline.com)">
+					<img src="img/8985207189_01ea27882d_m.jpg" width="88" height="58" alt="" />
+				</div>
+				<div  rel="gallery1" href="http://farm4.staticflickr.com/3677/8962691008_7f489395c9_b.jpg" title="Grasmere Lake (Phil 'the link' Whittaker (gizto29))">
+					<img src="img/8962691008_7f489395c9_m.jpg" alt="" />
+				</div>
+				<div  rel="gallery1" href="http://farm6.staticflickr.com/5471/9036958611_fa1bb7f827_b.jpg" title="Westfield Waterfalls - Middletown CT Lower (Graham_CS)">
+					<img src="img/9036958611_fa1bb7f827_m.jpg" alt="" />
+				</div>
+				<a  rel="gallery1" href="http://farm4.staticflickr.com/3824/9041440555_2175b32078_b.jpg" title="Calm Before The Storm (One Shoe Photography Ltd.)">
+					<img src="img/9041440555_2175b32078_m.jpg" alt="" />
+				</a>
+				<div  rel="gallery1" href="http://farm3.staticflickr.com/2870/8985207189_01ea27882d_b.jpg" title="Lambs Valley (JMImagesonline.com)">
+					<img src="img/8985207189_01ea27882d_m.jpg" alt="" />
+				</div>
+				<div  rel="gallery1" href="http://farm4.staticflickr.com/3677/8962691008_7f489395c9_b.jpg" title="Grasmere Lake (Phil 'the link' Whittaker (gizto29))">
+					<img src="img/8962691008_7f489395c9_m.jpg" alt="" />
+				</div>
+				<div  rel="gallery1" href="http://farm6.staticflickr.com/5471/9036958611_fa1bb7f827_b.jpg" title="Westfield Waterfalls - Middletown CT Lower (Graham_CS)">
+					<img src="img/9036958611_fa1bb7f827_m.jpg" alt="" />
+				</div>
+				<div  rel="gallery1"  title="Calm Before The Storm (One Shoe Photography Ltd.)">
+					<img src="img/9041440555_2175b32078_m.jpg" alt="" />
+				</div>
+				
+			</div>
+		</div>
+			
+	</div>
+		<div id="sidebar" class="col-md-4">
+  <h2>Informations</h2>
+</div>
+<script>
+// Create fancybox2 gallery
+function DemoGallery(){
+	$('.fancybox').fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+}
+$(document).ready(function() {
+	// Load Fancybox2 and make gallery in callback
+	LoadFancyboxScript(DemoGallery);
+});
+</script>

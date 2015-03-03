@@ -1,0 +1,30 @@
+<div class="row">
+	<div id="breadcrumb" class="col-md-12">
+		<ol class="breadcrumb">
+			<li><a href="index.html">Dashboard</a></li>
+			<li><a href="#">Pages</a></li>
+			<li><a href="#">Page search</a></li>
+		</ol>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-10">
+		<p class="small">About 3,870,000,000 results (0.28 seconds)</p>
+		<div class="one-result">
+			<a href="#" class="large">Metasearch Search Engine - Search.com</a>
+			<p class="txt-primary">www.search.com</p>
+			<p><b>Search</b> the Web by <b>searching</b> the best engines from one place.</p>
+		</div>
+		
+		<ul class="pagination"><li class="prev disabled"><a href="#">← Previous</a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li class="next"><a href="#">Next → </a></li></ul>
+	</div>
+	<div class="col-xs-2">
+		<ul class="nav nav-search">
+			<li class="active"><a href="#">Web</a></li>
+			<li><a href="#">Images</a></li>
+			<li><a href="#">Video</a></li>
+			<li><a href="#">Maps</a></li>
+			<li><a href="#">News</a></li>
+		</ul>
+	</div>
+</div>

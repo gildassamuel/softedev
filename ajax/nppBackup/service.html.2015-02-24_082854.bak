@@ -1,0 +1,94 @@
+<div class="row">
+	<div id="breadcrumb" class="col-md-12">
+		<ol class="breadcrumb">
+			<li><a href="index.html">Acceuil</a></li>
+			<li><a href="#">Nos Services</a></li>
+			
+		</ol>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="box">
+			<div class="box-header col-md-8">
+				<div class="box-name ">
+					<i class="fa fa-picture-o"></i>
+					<span>Nos Services</span>
+				</div>
+				
+				<div class="no-move"></div>
+			</div>
+<div id="sidebar" class="box-content  col-xs-8 col-md-6">
+ 
+ <div class="box-header col-md-12">
+				<div class="box-name ">
+					<i class="fa fa-picture-o"></i>
+					<span>Information</span>
+				</div>
+				
+				<div class="no-move"></div>
+			</div>
+</div>
+			<div id="simple_gallery" class="box-content col-xs-8 col-md-8">
+				
+				
+				<div   rel="gallery1"  title="Lambs Valley (JMImagesonline.com)">
+					<img src="img/8985207189_01ea27882d_m.jpg" width="88" height="58" alt="" />
+				</div>
+				<div  rel="gallery1" href="http://farm4.staticflickr.com/3677/8962691008_7f489395c9_b.jpg" title="Grasmere Lake (Phil 'the link' Whittaker 
+(gizto29))">
+					<img src="img/8962691008_7f489395c9_m.jpg" alt="" />
+				</div>
+				<div  rel="gallery1" title="Westfield Waterfalls - Middletown CT Lower (Graham_CS)">
+					<img src="img/9036958611_fa1bb7f827_m.jpg" alt="" />
+				</div>
+				<div  rel="gallery1"  title="Calm Before The Storm (One Shoe Photography Ltd.)">
+					<img src="img/9041440555_2175b32078_m.jpg" alt="" />
+				</div>
+				<div  rel="gallery1"  title="Lambs Valley (JMImagesonline.com)">
+					<img src="img/8985207189_01ea27882d_m.jpg" alt="" />
+				</div>
+				
+				
+			</div>
+		</div>
+			
+	</div>
+<script src="plugins/jquery/jquery-2.1.0.min.js"></script>
+<script>
+// Create fancybox2 gallery
+function DemoGallery(){
+	$('.fancybox').fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+}
+$(document).ready(function() {
+	// Load Fancybox2 and make gallery in callback
+	LoadFancyboxScript(DemoGallery);
+	formService()
+	
+	function formService(){
+  $('#simple_gallery div').on('click', function(){
+		var header = 'commander';
+		var form = $('<form id="serviceForm" method="post" action="" class="form-horizontal col-lg-9">'+'<div class="row"><div class="form-group"><label class="col-lg-5 col-md-7">Nom et Prenom : </label><div class="col-lg-10"><input type="text" class="form-control" name="username" /></div></div></div><div class="row"><div class="form-group"><label class=col-lg-2 control-label">Type de Site</label><div class="col-lg-10"><input type="text" class="form-control" name="siteType" /></div></div></div><div class="row"><div class="form-group"><label class="col-lg-2 control-label">Téléphone</label><div class="col-sm-7 col-lg-10"><input type="text" class="form-control" name="tel" /></div></div></div><div class="row"><div class="form-group"><label class=" col-lg-2 control-label">Email</label><div class="col-sm-7 col-lg-10"><input type="text" class="form-control" name="mail" /></div></div></div><div class="row"><div class="form-group"><label class="col-lg-2 control-label">Objet</label><div class="col-sm-7 col-lg-10"><input type="text" class="form-control" name="objet" /></div></div></div><div class="row"><div class="form-group"><label for="textarea" class="col-lg-2">Description </label><div class="col-lg-10"><input type="textarea" class="form-control" id="textarea"/></div></div></div></form>');
+		var button = $('<button class="btn btn-primary pullright" type="submit">Envoyer</button><div class="alert alert-block alert-danger" style="display: none"><h4>Erreur ! </h4>Vous devez entrer au moins 4 caractères !</div>');
+		OpenModalBox(header, form, button);
+	});
+
+ }
+	
+$( function( ) {
+   $( "form").on( "submit", function( ) {
+     if ($("input").val( ).length < 4) {
+       $("div.form-group").addClass("has-error") ;
+       $("div.alert").show("slow").delay(4000).hide("slow") ;
+       return false;
+     }
+  } ) ;
+} ) ;
+	
+});
+</script>
+
+<script ></script>
